@@ -1,11 +1,11 @@
 Thank you @$USER$ for your request to be part of our community.
 
-In a few, often not longer than a day, a Core Developer will process your request.
+Soon, often not longer than a day, a Core Developer will process your request.
 Till that time, please sit tight.
 
 ---
 
-_For the Core Developer_
+_For the Core Developers_
 
 User @$USER$ is requesting access to language __$REQUEST_VALUE$__.
 

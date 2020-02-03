@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
-- name: OpenTTD (game related) bugs
+- name: OpenTTD bugs (game related)
   url: https://github.com/OpenTTD/OpenTTD/issues
   about: Found a bug in OpenTTD (the game)?
 - name: Bugs in the English language
   url: https://github.com/OpenTTD/OpenTTD/issues
-  about: Found a typo or grammar issue in the english language?
+  about: Found a typo or grammar issue in the English language?

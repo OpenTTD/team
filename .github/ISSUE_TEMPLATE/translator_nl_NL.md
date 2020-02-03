@@ -1,17 +1,18 @@
 ---
-name: Translator access for dutch (nl_NL)
-about: Do you want access to help translating the dutch (nl_NL) language?
+name: Translator access to Dutch (nl_NL)
+about: Do you want access for translating into Dutch (nl_NL)?
 title: "[nl_NL] Translator access request"
 labels: request_access
 ---
 
+<!-- Please do not edit the header of this template. If you have something to add, do this at the end. -->
 <!-- translator: nl_NL -->
 
 Hi,
 
-I would like to ask access to help translating OpenTTD and its subprojects for dutch (nl_NL).
+I would like to ask for access to help translating OpenTTD and its subprojects into Dutch (nl_NL).
 
-The dutch (nl_NL) language is well known to me, and I promise to cooperate with my fellow translators to give the end-users the best experience possible.
+The Dutch (nl_NL) language is well known to me, and I promise to cooperate with my fellow translators to give the end-users the best experience possible.
 
 <!-- DO NOT modify anything above this line; feel free to add a personal touch below this line -->
 
