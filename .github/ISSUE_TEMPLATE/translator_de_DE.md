@@ -5,8 +5,8 @@ title: "[de_DE] Translator access request"
 labels: request_access
 ---
 
-<!-- Please do not edit the header of this template. If you have something to add, do this at the end. -->
 <!-- translator: de_DE -->
+<!-- Please do not edit the header of this template. If you have something to add, do this at the end. -->
 
 Hi,
 
