@@ -6,7 +6,7 @@ def issue_comment(comments_url, template, replacement=None):
     """Add a comment to an issue."""
     github_token = os.getenv("GITHUB_TOKEN")
 
-    with open(f"request_access/reply_{template}.md") as f:
+    with open(f"templates/reply_{template}.md") as f:
         body = f.read()
     if replacement is not None:
         for key, value in replacement.items():

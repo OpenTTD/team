@@ -1,4 +1,4 @@
-from request_access.github import (
+from .github import (
     issue_comment,
     issue_close,
 )

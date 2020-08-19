@@ -2,11 +2,12 @@ import click
 import json
 import os
 
-from request_access.github import (
+from .issue_templates import do_generate_issue_templates
+from .github import (
     issue_comment,
     issue_close,
 )
-from request_access.validate_issue import validate_issue_and_get_request
+from .validate_issue import validate_issue_and_get_request
 
 CONTEXT_SETTINGS = {"help_option_names": ["-h", "--help"]}
 
@@ -24,6 +25,9 @@ def _request_approve(request_type, request_value, data):
     # TODO -- Validate that the commenter is in the right team
     # TODO -- Add user to the Team
 
+    import json
+    print(json.dumps(data, indent=4))
+
     issue_comment(
         data["issue"]["comments_url"],
         f"request_{request_type}_approved",
@@ -35,6 +39,9 @@ def _request_approve(request_type, request_value, data):
 def _request_deny(request_type, request_value, data):
     # TODO -- Check if the issue is not closed
     # TODO -- Validate that the commenter is in the right team
+
+    import json
+    print(json.dumps(data, indent=4))
 
     issue_comment(
         data["issue"]["comments_url"],
@@ -56,9 +63,17 @@ def _new_comment(request_type, request_value, data):
 @click.command(context_settings=CONTEXT_SETTINGS)
 @click.option("--new-issue", help="Indicate there is a new issue", is_flag=True)
 @click.option("--new-comment", help="Indicate there is a new comment", is_flag=True)
-def main(new_issue, new_comment):
-    if not new_issue and not new_comment:
-        raise Exception("Not a new issue and not a new comment; this is not possible")
+@click.option("--generate-issue-templates", help="Generate issue templates", is_flag=True)
+def main(new_issue, new_comment, generate_issue_templates):
+    if not new_issue and not new_comment and not generate_issue_templates:
+        raise Exception("Please select an option")
+
+    if os.getenv("GITHUB_TOKEN") is None:
+        raise Exception("Expected GITHUB_TOKEN to be set; none found")
+
+    if generate_issue_templates:
+        do_generate_issue_templates()
+        return
 
     with open(os.getenv("GITHUB_EVENT_PATH")) as f:
         data = json.loads(f.read())
