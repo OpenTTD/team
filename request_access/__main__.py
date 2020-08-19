@@ -26,6 +26,7 @@ def _request_approve(request_type, request_value, data):
     # TODO -- Add user to the Team
 
     import json
+
     print(json.dumps(data, indent=4))
 
     issue_comment(
@@ -41,6 +42,7 @@ def _request_deny(request_type, request_value, data):
     # TODO -- Validate that the commenter is in the right team
 
     import json
+
     print(json.dumps(data, indent=4))
 
     issue_comment(
