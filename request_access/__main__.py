@@ -4,6 +4,7 @@ import os
 
 from .issue_templates import do_generate_issue_templates
 from .github import (
+    is_part_of_team,
     issue_comment,
     issue_close,
 )
@@ -20,14 +21,21 @@ def _new_issue(request_type, request_value, data):
     )
 
 
+def _is_core_developer(login):
+    return is_part_of_team(login, "Editors")
+
+
 def _request_approve(request_type, request_value, data):
-    # TODO -- Check if the issue is not closed
-    # TODO -- Validate that the commenter is in the right team
+    # Silently ignore the ticket if it was already closed
+    if data["issue"]["state"] != "open":
+        return
+
+    # Silently ignore if the user approving is not in the right team
+    if not _is_core_developer(data["comment"]["user"]["login"]):
+        return
+
     # TODO -- Add user to the Team
-
-    import json
-
-    print(json.dumps(data, indent=4))
+    # user_id = data["issue"]["user"]["id"]
 
     issue_comment(
         data["issue"]["comments_url"],
@@ -38,12 +46,13 @@ def _request_approve(request_type, request_value, data):
 
 
 def _request_deny(request_type, request_value, data):
-    # TODO -- Check if the issue is not closed
-    # TODO -- Validate that the commenter is in the right team
+    # Silently ignore the ticket if it was already closed
+    if data["issue"]["state"] != "open":
+        return
 
-    import json
-
-    print(json.dumps(data, indent=4))
+    # Silently ignore if the user approving is not in the right team
+    if not _is_core_developer(data["comment"]["user"]["login"]):
+        return
 
     issue_comment(
         data["issue"]["comments_url"],

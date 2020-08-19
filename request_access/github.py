@@ -2,6 +2,24 @@ import os
 import requests
 
 
+def is_part_of_team(login, team):
+    """Check if a user is part of a team"""
+    github_token = os.getenv("GITHUB_TOKEN")
+
+    headers = {
+        "Authorization": f"bearer {github_token}",
+        "Accept": "application/json",
+    }
+
+    response = requests.get(f"https://api.github.com/orgs/OpenTTD/teams/{team}/memberships/{login}", headers=headers)
+    if response.status_code not in (200, 404):
+        raise Exception(
+            f"Requesting membership returned error code {response.status_code}; JSON that followed: ", response.text,
+        )
+
+    return response.status_code == 200
+
+
 def issue_comment(comments_url, template, replacement=None):
     """Add a comment to an issue."""
     github_token = os.getenv("GITHUB_TOKEN")
