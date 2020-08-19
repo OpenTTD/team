@@ -42,9 +42,10 @@ def validate_issue_and_get_request(data):
 
     # Skip till the first <!--, as that indicate the start of the template.
     expected_body = expected_body[expected_body.find("<!--") :]
-    # Ignore everything after the "<!-- DO NOT modify", as that allows the
-    # user to add a personal touch after the important bits.
-    expected_body = expected_body[: expected_body.find("<!-- DO NOT")]
+    # Ignore everything after the "<!-- Please do not edit the above message",
+    # as that allows the user to add a personal message after the important
+    # bits.
+    expected_body = expected_body[: expected_body.find("<!-- Please do not edit the above message")]
 
     # The body of an issue can be with \r\n line ending
     if not body.replace("\r\n", "\n").startswith(expected_body):
