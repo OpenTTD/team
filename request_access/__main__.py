@@ -22,16 +22,18 @@ def _new_issue(request_type, request_value, data):
 
 
 def _is_core_developer(login):
-    return is_part_of_team(login, "Editors")
+    return is_part_of_team(login, "Core Developers")
 
 
 def _request_approve(request_type, request_value, data):
     # Silently ignore the ticket if it was already closed
     if data["issue"]["state"] != "open":
+        print("This issue is already closed; ignoring approval")
         return
 
     # Silently ignore if the user approving is not in the right team
     if not _is_core_developer(data["comment"]["user"]["login"]):
+        print("The person approving is not part of the Core Developers team")
         return
 
     # TODO -- Add user to the Team
@@ -48,10 +50,12 @@ def _request_approve(request_type, request_value, data):
 def _request_deny(request_type, request_value, data):
     # Silently ignore the ticket if it was already closed
     if data["issue"]["state"] != "open":
+        print("This issue is already closed; ignoring approval")
         return
 
     # Silently ignore if the user approving is not in the right team
     if not _is_core_developer(data["comment"]["user"]["login"]):
+        print("The person approving is not part of the Core Developers team")
         return
 
     issue_comment(
