@@ -38,7 +38,25 @@ def list_teams():
     return response.json()
 
 
+def add_to_team(login, team):
+    """Add a member to a team"""
+    github_token = os.getenv("GITHUB_TOKEN")
+
+    headers = {
+        "Authorization": f"bearer {github_token}",
+        "Accept": "application/json",
+    }
+
+    response = requests.put(f"https://api.github.com/orgs/OpenTTD/teams/{team}/memberships/{login}", headers=headers)
+    if response.status_code >= 300:
+        raise Exception(
+            f"Adding a member to a team returned error code {response.status_code}; JSON that followed: ",
+            response.text,
+        )
+
+
 def create_team(name, description, parent_id):
+    """Create a new team, with no members"""
     github_token = os.getenv("GITHUB_TOKEN")
 
     payload = {

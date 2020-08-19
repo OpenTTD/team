@@ -4,6 +4,7 @@ import os
 
 from .issue_templates import do_generate_issue_templates
 from .github import (
+    add_to_team,
     is_part_of_team,
     issue_comment,
     issue_close,
@@ -36,8 +37,7 @@ def _request_approve(request_type, request_value, data):
         print("The person approving is not part of the Core Developers team")
         return
 
-    # TODO -- Add user to the Team
-    # user_id = data["issue"]["user"]["id"]
+    add_to_team(data["issue"]["user"]["login"], request_value)
 
     issue_comment(
         data["issue"]["comments_url"],
