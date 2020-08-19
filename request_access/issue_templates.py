@@ -7,8 +7,6 @@ from .github import (
 
 
 def do_generate_issue_templates():
-    # TODO -- Validate if the teams exists in GitHub; create them otherwise
-
     response = requests.get("https://translator.openttd.org/language-list")
     if response.status_code != 200:
         raise Exception("Couldn't fetch language list from translator.openttd.org")

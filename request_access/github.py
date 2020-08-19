@@ -29,7 +29,7 @@ def list_teams():
         "Accept": "application/json",
     }
 
-    response = requests.get("https://api.github.com/orgs/OpenTTD/teams", headers=headers)
+    response = requests.get("https://api.github.com/orgs/OpenTTD/teams?per_page=100", headers=headers)
     if response.status_code >= 300:
         raise Exception(
             f"Posting a reply returned error code {response.status_code}; JSON that followed: ", response.text,
