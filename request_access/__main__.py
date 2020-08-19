@@ -22,7 +22,7 @@ def _new_issue(request_type, request_value, data):
 
 
 def _is_core_developer(login):
-    return is_part_of_team(login, "Core Developers")
+    return is_part_of_team(login, "core-developers")
 
 
 def _request_approve(request_type, request_value, data):
