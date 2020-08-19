@@ -1,5 +1,10 @@
 import requests
 
+from .github import (
+    create_team,
+    list_teams,
+)
+
 
 def do_generate_issue_templates():
     # TODO -- Validate if the teams exists in GitHub; create them otherwise
@@ -8,12 +13,25 @@ def do_generate_issue_templates():
     if response.status_code != 200:
         raise Exception("Couldn't fetch language list from translator.openttd.org")
 
-    for line in response.content.decode().split("\n"):
+    teams = list_teams()
+    for team in teams:
+        if team["name"] == "Translators":
+            team_translators_id = team["id"]
+            break
+    else:
+        raise Exception("Couldn't find Translators team on GitHub")
+
+    github_known_teams = []
+    for team in teams:
+        if team["parent"] is not None and team["parent"]["id"] == team_translators_id:
+            github_known_teams.append(team["name"])
+
+    for line in response.content.decode().split("\n")[1:]:
         line = line.strip()
         if not line:
             continue
 
-        (isocode, grflangid, filename, is_stable, name, ownname, plural, gender, case) = line.split(",")
+        (isocode, _, _, _, name, ownname, _, _, _) = line.split(",")
 
         with open("templates/issue_template_translator.md", "r") as template_fp:
             template = template_fp.read()
@@ -23,3 +41,7 @@ def do_generate_issue_templates():
             for key, value in {"$NAME$": name, "$ISOCODE$": isocode}.items():
                 lang = lang.replace(key, value)
             lang_fp.write(lang)
+
+        if isocode not in github_known_teams:
+            print(f"Creating GitHub team {isocode} ...")
+            create_team(isocode, ownname, team_translators_id)
