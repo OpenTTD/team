@@ -14,7 +14,8 @@ def is_part_of_team(login, team):
     response = requests.get(f"https://api.github.com/orgs/OpenTTD/teams/{team}/memberships/{login}", headers=headers)
     if response.status_code not in (200, 404):
         raise Exception(
-            f"Requesting membership returned error code {response.status_code}; JSON that followed: ", response.text,
+            f"Requesting membership returned error code {response.status_code}; JSON that followed: ",
+            response.text,
         )
 
     return response.status_code == 200
@@ -32,7 +33,8 @@ def list_teams():
     response = requests.get("https://api.github.com/orgs/OpenTTD/teams?per_page=100", headers=headers)
     if response.status_code >= 300:
         raise Exception(
-            f"Posting a reply returned error code {response.status_code}; JSON that followed: ", response.text,
+            f"Posting a reply returned error code {response.status_code}; JSON that followed: ",
+            response.text,
         )
 
     return response.json()
@@ -73,7 +75,8 @@ def create_team(name, description, parent_id):
     response = requests.post("https://api.github.com/orgs/OpenTTD/teams", json=payload, headers=headers)
     if response.status_code >= 300:
         raise Exception(
-            f"Creating a team returned error code {response.status_code}; JSON that followed: ", response.text,
+            f"Creating a team returned error code {response.status_code}; JSON that followed: ",
+            response.text,
         )
 
     # After creating a team, the user doing it is part of the team. This is
@@ -117,7 +120,8 @@ def issue_comment(comments_url, template, replacement=None):
     response = requests.post(comments_url, json={"body": body}, headers=headers)
     if response.status_code >= 300:
         raise Exception(
-            f"Posting a reply returned error code {response.status_code}; JSON that followed: ", response.text,
+            f"Posting a reply returned error code {response.status_code}; JSON that followed: ",
+            response.text,
         )
 
 
@@ -133,5 +137,6 @@ def issue_close(issue_url):
     response = requests.patch(issue_url, json={"state": "closed"}, headers=headers)
     if response.status_code >= 300:
         raise Exception(
-            f"Posting a reply returned error code {response.status_code}; JSON that followed: ", response.text,
+            f"Posting a reply returned error code {response.status_code}; JSON that followed: ",
+            response.text,
         )

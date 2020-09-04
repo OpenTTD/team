@@ -21,7 +21,11 @@ def _get_request_from_body(body):
 
 def _issue_is_modified(data):
     issue_comment(
-        data["issue"]["comments_url"], "template_modified", replacement={"$USER$": data["issue"]["user"]["login"],},
+        data["issue"]["comments_url"],
+        "template_modified",
+        replacement={
+            "$USER$": data["issue"]["user"]["login"],
+        },
     )
     issue_close(data["issue"]["url"])
 

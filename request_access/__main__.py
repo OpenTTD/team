@@ -18,7 +18,10 @@ def _new_issue(request_type, request_value, data):
     issue_comment(
         data["issue"]["comments_url"],
         f"request_{request_type}_pending",
-        replacement={"$REQUEST_VALUE$": request_value, "$USER$": data["issue"]["user"]["login"],},
+        replacement={
+            "$REQUEST_VALUE$": request_value,
+            "$USER$": data["issue"]["user"]["login"],
+        },
     )
 
 
@@ -42,7 +45,10 @@ def _request_approve(request_type, request_value, data):
     issue_comment(
         data["issue"]["comments_url"],
         f"request_{request_type}_approved",
-        replacement={"$REQUEST_VALUE$": request_value, "$USER$": data["issue"]["user"]["login"],},
+        replacement={
+            "$REQUEST_VALUE$": request_value,
+            "$USER$": data["issue"]["user"]["login"],
+        },
     )
     issue_close(data["issue"]["url"])
 
@@ -61,7 +67,10 @@ def _request_deny(request_type, request_value, data):
     issue_comment(
         data["issue"]["comments_url"],
         f"request_{request_type}_denied",
-        replacement={"$REQUEST_VALUE$": request_value, "$USER$": data["issue"]["user"]["login"],},
+        replacement={
+            "$REQUEST_VALUE$": request_value,
+            "$USER$": data["issue"]["user"]["login"],
+        },
     )
     issue_close(data["issue"]["url"])
 
