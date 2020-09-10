@@ -1,0 +1,35 @@
+name: Testing
+
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+
+jobs:
+  flake8:
+    name: Flake8
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Flake8
+      uses: TrueBrain/actions-flake8@master
+      with:
+        path: request_access
+
+  black:
+    name: Black
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.8
+    - name: Black
+      run: |
+        python -m pip install --upgrade pip
+        pip install black
+        black -l 120 --check request_access

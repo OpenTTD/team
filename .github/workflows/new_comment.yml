@@ -1,0 +1,28 @@
+name: New comment
+
+on:
+  issue_comment:
+    types:
+    - created
+
+jobs:
+  new_comment:
+    name: New comment
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.8
+    - name: Install dependencies
+      run: |
+        pip install -U pip
+        pip install -r requirements.txt
+    - name: New comment
+      run: |
+        python -m request_access --new-comment
+      env:
+        GITHUB_TOKEN: ${{ secrets.DORPSGEK_TOKEN }}
