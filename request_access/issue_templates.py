@@ -31,6 +31,10 @@ def do_generate_issue_templates():
 
         (isocode, _, _, _, name, ownname, _, _, _) = line.split(",")
 
+        # The base language cannot be translated.
+        if isocode == "en_GB":
+            continue
+
         with open("templates/issue_template_translator.md", "r") as template_fp:
             template = template_fp.read()
 
