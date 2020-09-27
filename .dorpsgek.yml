@@ -6,4 +6,6 @@ notifications:
 
   pull-request:
   issue:
+    except-by:
+    - DorpsGek
   tag-created:
