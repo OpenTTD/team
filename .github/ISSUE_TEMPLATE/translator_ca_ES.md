@@ -3,6 +3,8 @@ name: Translator access to Catalan (ca_ES)
 about: Do you want access for translating into Catalan?
 title: "[ca_ES] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: ca_ES -->

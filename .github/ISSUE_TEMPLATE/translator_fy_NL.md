@@ -3,6 +3,8 @@ name: Translator access to Frisian (fy_NL)
 about: Do you want access for translating into Frisian?
 title: "[fy_NL] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: fy_NL -->

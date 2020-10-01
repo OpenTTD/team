@@ -3,6 +3,8 @@ name: Translator access to Turkish (tr_TR)
 about: Do you want access for translating into Turkish?
 title: "[tr_TR] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: tr_TR -->

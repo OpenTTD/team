@@ -3,6 +3,8 @@ name: Translator access to Maltese (mt_MT)
 about: Do you want access for translating into Maltese?
 title: "[mt_MT] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: mt_MT -->

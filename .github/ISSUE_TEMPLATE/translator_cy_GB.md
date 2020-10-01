@@ -3,6 +3,8 @@ name: Translator access to Welsh (cy_GB)
 about: Do you want access for translating into Welsh?
 title: "[cy_GB] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: cy_GB -->

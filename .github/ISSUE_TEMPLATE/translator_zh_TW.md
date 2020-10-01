@@ -3,6 +3,8 @@ name: Translator access to Chinese (Traditional) (zh_TW)
 about: Do you want access for translating into Chinese (Traditional)?
 title: "[zh_TW] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: zh_TW -->

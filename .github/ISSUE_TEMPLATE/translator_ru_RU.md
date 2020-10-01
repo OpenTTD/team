@@ -3,6 +3,8 @@ name: Translator access to Russian (ru_RU)
 about: Do you want access for translating into Russian?
 title: "[ru_RU] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: ru_RU -->

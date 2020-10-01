@@ -3,6 +3,8 @@ name: Translator access to Finnish (fi_FI)
 about: Do you want access for translating into Finnish?
 title: "[fi_FI] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: fi_FI -->

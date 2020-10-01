@@ -3,6 +3,8 @@ name: Translator access to Scottish Gaelic (gd_GB)
 about: Do you want access for translating into Scottish Gaelic?
 title: "[gd_GB] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: gd_GB -->

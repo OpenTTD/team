@@ -3,6 +3,8 @@ name: Translator access to Vietnamese (vi_VN)
 about: Do you want access for translating into Vietnamese?
 title: "[vi_VN] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: vi_VN -->

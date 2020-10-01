@@ -3,6 +3,8 @@ name: Translator access to Indonesian (id_ID)
 about: Do you want access for translating into Indonesian?
 title: "[id_ID] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: id_ID -->

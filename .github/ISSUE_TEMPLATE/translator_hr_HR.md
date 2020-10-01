@@ -3,6 +3,8 @@ name: Translator access to Croatian (hr_HR)
 about: Do you want access for translating into Croatian?
 title: "[hr_HR] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: hr_HR -->

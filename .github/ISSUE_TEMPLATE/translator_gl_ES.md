@@ -3,6 +3,8 @@ name: Translator access to Galician (gl_ES)
 about: Do you want access for translating into Galician?
 title: "[gl_ES] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: gl_ES -->

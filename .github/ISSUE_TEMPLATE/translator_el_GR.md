@@ -3,6 +3,8 @@ name: Translator access to Greek (el_GR)
 about: Do you want access for translating into Greek?
 title: "[el_GR] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: el_GR -->

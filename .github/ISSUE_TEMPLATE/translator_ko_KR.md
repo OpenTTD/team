@@ -3,6 +3,8 @@ name: Translator access to Korean (ko_KR)
 about: Do you want access for translating into Korean?
 title: "[ko_KR] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: ko_KR -->

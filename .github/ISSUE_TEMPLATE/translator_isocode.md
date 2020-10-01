@@ -3,6 +3,8 @@ name: Translator access to name (isocode)
 about: Do you want access for translating into name?
 title: "[isocode] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: isocode -->

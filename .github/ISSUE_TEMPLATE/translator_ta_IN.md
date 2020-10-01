@@ -3,6 +3,8 @@ name: Translator access to Tamil (ta_IN)
 about: Do you want access for translating into Tamil?
 title: "[ta_IN] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: ta_IN -->

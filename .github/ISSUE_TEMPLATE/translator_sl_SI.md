@@ -3,6 +3,8 @@ name: Translator access to Slovenian (sl_SI)
 about: Do you want access for translating into Slovenian?
 title: "[sl_SI] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: sl_SI -->

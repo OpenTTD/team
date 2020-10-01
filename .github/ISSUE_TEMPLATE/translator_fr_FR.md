@@ -3,6 +3,8 @@ name: Translator access to French (fr_FR)
 about: Do you want access for translating into French?
 title: "[fr_FR] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: fr_FR -->

@@ -3,6 +3,8 @@ name: Translator access to Czech (cs_CZ)
 about: Do you want access for translating into Czech?
 title: "[cs_CZ] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: cs_CZ -->

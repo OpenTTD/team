@@ -3,6 +3,8 @@ name: Translator access to Icelandic (is_IS)
 about: Do you want access for translating into Icelandic?
 title: "[is_IS] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: is_IS -->

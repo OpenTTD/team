@@ -3,6 +3,8 @@ name: Translator access to Arabic (Egypt) (ar_EG)
 about: Do you want access for translating into Arabic (Egypt)?
 title: "[ar_EG] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: ar_EG -->

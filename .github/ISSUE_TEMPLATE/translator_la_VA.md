@@ -3,6 +3,8 @@ name: Translator access to Latin (la_VA)
 about: Do you want access for translating into Latin?
 title: "[la_VA] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: la_VA -->

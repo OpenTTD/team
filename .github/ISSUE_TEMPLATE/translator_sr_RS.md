@@ -3,6 +3,8 @@ name: Translator access to Serbian (sr_RS)
 about: Do you want access for translating into Serbian?
 title: "[sr_RS] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: sr_RS -->

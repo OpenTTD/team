@@ -3,6 +3,8 @@ name: Translator access to Ido (io_IO)
 about: Do you want access for translating into Ido?
 title: "[io_IO] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: io_IO -->

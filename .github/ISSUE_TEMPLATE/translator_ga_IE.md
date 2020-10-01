@@ -3,6 +3,8 @@ name: Translator access to Irish (ga_IE)
 about: Do you want access for translating into Irish?
 title: "[ga_IE] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: ga_IE -->

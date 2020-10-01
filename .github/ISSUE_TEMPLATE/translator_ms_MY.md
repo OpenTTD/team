@@ -3,6 +3,8 @@ name: Translator access to Malay (ms_MY)
 about: Do you want access for translating into Malay?
 title: "[ms_MY] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: ms_MY -->

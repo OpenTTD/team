@@ -3,6 +3,8 @@ name: Translator access to Norwegian (Nynorsk) (nn_NO)
 about: Do you want access for translating into Norwegian (Nynorsk)?
 title: "[nn_NO] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: nn_NO -->

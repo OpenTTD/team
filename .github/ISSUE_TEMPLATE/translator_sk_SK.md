@@ -3,6 +3,8 @@ name: Translator access to Slovak (sk_SK)
 about: Do you want access for translating into Slovak?
 title: "[sk_SK] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: sk_SK -->

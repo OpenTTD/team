@@ -3,6 +3,8 @@ name: Translator access to Swedish (sv_SE)
 about: Do you want access for translating into Swedish?
 title: "[sv_SE] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: sv_SE -->

@@ -3,6 +3,8 @@ name: Translator access to Afrikaans (af_ZA)
 about: Do you want access for translating into Afrikaans?
 title: "[af_ZA] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: af_ZA -->

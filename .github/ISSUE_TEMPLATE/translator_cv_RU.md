@@ -3,6 +3,8 @@ name: Translator access to Chuvash (cv_RU)
 about: Do you want access for translating into Chuvash?
 title: "[cv_RU] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: cv_RU -->

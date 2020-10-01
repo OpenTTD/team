@@ -3,6 +3,8 @@ name: Translator access to Faroese (fo_FO)
 about: Do you want access for translating into Faroese?
 title: "[fo_FO] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: fo_FO -->

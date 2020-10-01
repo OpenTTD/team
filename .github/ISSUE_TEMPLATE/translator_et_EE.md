@@ -3,6 +3,8 @@ name: Translator access to Estonian (et_EE)
 about: Do you want access for translating into Estonian?
 title: "[et_EE] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: et_EE -->

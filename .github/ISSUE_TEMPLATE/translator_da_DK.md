@@ -3,6 +3,8 @@ name: Translator access to Danish (da_DK)
 about: Do you want access for translating into Danish?
 title: "[da_DK] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: da_DK -->

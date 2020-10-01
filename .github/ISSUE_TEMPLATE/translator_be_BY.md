@@ -3,6 +3,8 @@ name: Translator access to Belarusian (be_BY)
 about: Do you want access for translating into Belarusian?
 title: "[be_BY] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: be_BY -->

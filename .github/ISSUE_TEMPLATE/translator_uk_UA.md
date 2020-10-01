@@ -3,6 +3,8 @@ name: Translator access to Ukrainian (uk_UA)
 about: Do you want access for translating into Ukrainian?
 title: "[uk_UA] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: uk_UA -->

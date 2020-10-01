@@ -3,6 +3,8 @@ name: Translator access to English (US) (en_US)
 about: Do you want access for translating into English (US)?
 title: "[en_US] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: en_US -->

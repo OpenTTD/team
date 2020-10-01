@@ -3,6 +3,8 @@ name: Translator access to Japanese (ja_JP)
 about: Do you want access for translating into Japanese?
 title: "[ja_JP] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: ja_JP -->

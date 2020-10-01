@@ -3,6 +3,8 @@ name: Translator access to Spanish (Mexican) (es_MX)
 about: Do you want access for translating into Spanish (Mexican)?
 title: "[es_MX] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: es_MX -->

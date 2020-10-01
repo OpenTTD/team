@@ -3,6 +3,8 @@ name: Translator access to Romanian (ro_RO)
 about: Do you want access for translating into Romanian?
 title: "[ro_RO] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: ro_RO -->

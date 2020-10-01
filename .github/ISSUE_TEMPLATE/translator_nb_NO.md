@@ -3,6 +3,8 @@ name: Translator access to Norwegian (Bokmal) (nb_NO)
 about: Do you want access for translating into Norwegian (Bokmal)?
 title: "[nb_NO] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: nb_NO -->

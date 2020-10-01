@@ -3,6 +3,8 @@ name: Translator access to Urdu (ur_PK)
 about: Do you want access for translating into Urdu?
 title: "[ur_PK] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: ur_PK -->

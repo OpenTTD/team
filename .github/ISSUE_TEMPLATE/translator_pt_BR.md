@@ -3,6 +3,8 @@ name: Translator access to Portuguese (Brazilian) (pt_BR)
 about: Do you want access for translating into Portuguese (Brazilian)?
 title: "[pt_BR] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: pt_BR -->

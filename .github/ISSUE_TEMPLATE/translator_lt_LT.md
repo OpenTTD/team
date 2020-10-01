@@ -3,6 +3,8 @@ name: Translator access to Lithuanian (lt_LT)
 about: Do you want access for translating into Lithuanian?
 title: "[lt_LT] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: lt_LT -->

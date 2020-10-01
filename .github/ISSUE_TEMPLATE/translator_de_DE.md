@@ -3,6 +3,8 @@ name: Translator access to German (de_DE)
 about: Do you want access for translating into German?
 title: "[de_DE] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: de_DE -->

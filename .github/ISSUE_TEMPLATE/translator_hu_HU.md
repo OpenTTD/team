@@ -3,6 +3,8 @@ name: Translator access to Hungarian (hu_HU)
 about: Do you want access for translating into Hungarian?
 title: "[hu_HU] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: hu_HU -->

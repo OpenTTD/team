@@ -3,6 +3,8 @@ name: Translator access to Polish (pl_PL)
 about: Do you want access for translating into Polish?
 title: "[pl_PL] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: pl_PL -->

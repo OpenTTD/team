@@ -3,6 +3,8 @@ name: Translator access to Persian (fa_IR)
 about: Do you want access for translating into Persian?
 title: "[fa_IR] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: fa_IR -->

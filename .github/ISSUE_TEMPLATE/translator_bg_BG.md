@@ -3,6 +3,8 @@ name: Translator access to Bulgarian (bg_BG)
 about: Do you want access for translating into Bulgarian?
 title: "[bg_BG] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: bg_BG -->

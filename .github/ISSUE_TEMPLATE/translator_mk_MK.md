@@ -3,6 +3,8 @@ name: Translator access to Macedonian (mk_MK)
 about: Do you want access for translating into Macedonian?
 title: "[mk_MK] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: mk_MK -->

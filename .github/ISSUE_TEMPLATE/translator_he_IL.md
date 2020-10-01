@@ -3,6 +3,8 @@ name: Translator access to Hebrew (he_IL)
 about: Do you want access for translating into Hebrew?
 title: "[he_IL] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: he_IL -->

@@ -3,6 +3,8 @@ name: Translator access to Dutch (nl_NL)
 about: Do you want access for translating into Dutch?
 title: "[nl_NL] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: nl_NL -->

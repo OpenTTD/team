@@ -3,6 +3,8 @@ name: Translator access to Marathi (mr_IN)
 about: Do you want access for translating into Marathi?
 title: "[mr_IN] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: mr_IN -->

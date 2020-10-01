@@ -3,6 +3,8 @@ name: Translator access to Luxembourgish (lb_LU)
 about: Do you want access for translating into Luxembourgish?
 title: "[lb_LU] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: lb_LU -->

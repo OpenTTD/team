@@ -3,6 +3,8 @@ name: Translator access to Esperanto (eo_EO)
 about: Do you want access for translating into Esperanto?
 title: "[eo_EO] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: eo_EO -->

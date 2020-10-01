@@ -3,6 +3,8 @@ name: Translator access to Thai (th_TH)
 about: Do you want access for translating into Thai?
 title: "[th_TH] Translator access request"
 labels: request_access
+assignees: ''
+
 ---
 
 <!-- translator: th_TH -->
