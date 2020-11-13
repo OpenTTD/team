@@ -54,6 +54,6 @@ def validate_issue_and_get_request(data):
     # The body of an issue can be with \r\n line ending
     if not body.replace("\r\n", "\n").startswith(expected_body):
         _issue_is_modified(data)
-        return
+        return None, None
 
     return request_type, request_value
