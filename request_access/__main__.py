@@ -110,6 +110,8 @@ def main(new_issue, new_comment, generate_issue_templates):
         return
 
     request_type, request_value = validate_issue_and_get_request(data)
+    if not request_type or not request_value:
+        return
 
     # Comment what is happening next.
     if new_issue:

@@ -38,7 +38,7 @@ def validate_issue_and_get_request(data):
     request_type, request_value = _get_request_from_body(body)
     if request_type is False or request_type not in ("translator",):
         _issue_is_modified(data)
-        return
+        return None, None
 
     # Check how the body should look like.
     with open(f".github/ISSUE_TEMPLATE/{request_type}_{request_value}.md") as f:
