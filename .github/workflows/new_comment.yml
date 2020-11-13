@@ -9,6 +9,7 @@ jobs:
   new_comment:
     name: New comment
     runs-on: ubuntu-latest
+    if: github.actor != 'DorpsGek'
 
     steps:
     - name: Checkout

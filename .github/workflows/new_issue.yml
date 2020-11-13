@@ -9,6 +9,7 @@ jobs:
   new_issue:
     name: New issue
     runs-on: ubuntu-latest
+    if: github.actor != 'DorpsGek'
 
     steps:
     - name: Checkout
