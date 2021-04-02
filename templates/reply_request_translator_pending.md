@@ -7,7 +7,7 @@ Till that time, please sit tight.
 
 _For the Core Developers_
 
-User @$USER$ is requesting access to language __$REQUEST_VALUE$__.
+User @$USER$ is requesting access to language [__$REQUEST_VALUE$__](https://github.com/orgs/OpenTTD/teams/$REQUEST_VALUE$).
 
 Please reply with either `/approve` or `/deny` in the first line of your comment to process this request.
 If you `/deny`, please be so kind to leave a reason why.
