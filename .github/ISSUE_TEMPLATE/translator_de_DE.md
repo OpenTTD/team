@@ -1,6 +1,6 @@
 ---
-name: Translator access to German (de_DE)
-about: Do you want access for translating into German?
+name: "Translator access to German (de_DE) \U0001F6D1 team full \U0001F6D1"
+about: Thanks, there are already many translators on this team.
 title: "[de_DE] Translator access request"
 labels: request_access
 ---

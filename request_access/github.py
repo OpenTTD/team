@@ -37,7 +37,13 @@ def list_teams():
             response.text,
         )
 
-    return response.json()
+    teams = response.json()
+    for team in teams:
+        members = requests.get(f"https://api.github.com/orgs/OpenTTD/teams/{team['slug']}/members", headers=headers)
+        if response.status_code == 200:
+            team["members"] = members.json()
+
+    return teams
 
 
 def add_to_team(login, team):
