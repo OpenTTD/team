@@ -33,3 +33,17 @@ jobs:
         python -m pip install --upgrade pip
         pip install black
         black -l 120 --check request_access
+
+  check_annotations:
+    name: Check Annotations
+    needs:
+    - flake8
+    - black
+
+    if: always() && github.event_name == 'pull_request'
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check annotations
+      uses: OpenTTD/actions/annotation-check@v2
