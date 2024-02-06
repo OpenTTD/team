@@ -1,6 +1,6 @@
 ---
-name: Translator access to French (fr_FR)
-about: Do you want access for translating into French?
+name: "Translator access to French (fr_FR) \U0001F6D1 team full \U0001F6D1"
+about: Thanks, there are already many translators on this team.
 title: "[fr_FR] Translator access request"
 labels: request_access
 ---

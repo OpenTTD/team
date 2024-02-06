@@ -1,6 +1,6 @@
 ---
-name: Translator access to Czech (cs_CZ)
-about: Do you want access for translating into Czech?
+name: "Translator access to Czech (cs_CZ) \U0001F6D1 team full \U0001F6D1"
+about: Thanks, there are already many translators on this team.
 title: "[cs_CZ] Translator access request"
 labels: request_access
 ---

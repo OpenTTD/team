@@ -1,6 +1,6 @@
 ---
-name: Translator access to Turkish (tr_TR)
-about: Do you want access for translating into Turkish?
+name: "Translator access to Turkish (tr_TR) \U0001F6D1 team full \U0001F6D1"
+about: Thanks, there are already many translators on this team.
 title: "[tr_TR] Translator access request"
 labels: request_access
 ---

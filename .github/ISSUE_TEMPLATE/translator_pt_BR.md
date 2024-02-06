@@ -1,6 +1,6 @@
 ---
-name: Translator access to Portuguese (Brazilian) (pt_BR)
-about: Do you want access for translating into Portuguese (Brazilian)?
+name: "Translator access to Portuguese (Brazilian) (pt_BR) \U0001F6D1 team full \U0001F6D1"
+about: Thanks, there are already many translators on this team.
 title: "[pt_BR] Translator access request"
 labels: request_access
 ---

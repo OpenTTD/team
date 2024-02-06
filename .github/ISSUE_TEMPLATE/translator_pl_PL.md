@@ -1,6 +1,6 @@
 ---
-name: "Translator access to Polish (pl_PL) \U0001F6D1 team full \U0001F6D1"
-about: Thanks, there are already many translators on this team.
+name: Translator access to Polish (pl_PL)
+about: Do you want access for translating into Polish?
 title: "[pl_PL] Translator access request"
 labels: request_access
 ---
