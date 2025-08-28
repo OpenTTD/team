@@ -1,6 +1,6 @@
 ---
-name: Translator access to Dutch (nl_NL)
-about: Do you want access for translating into Dutch?
+name: "Translator access to Dutch (nl_NL) \U0001F6D1 team full \U0001F6D1"
+about: Thanks, there are already many translators on this team.
 title: "[nl_NL] Translator access request"
 labels: request_access
 ---

@@ -1,6 +1,6 @@
 ---
-name: "Translator access to Indonesian (id_ID) \U0001F6D1 team full \U0001F6D1"
-about: Thanks, there are already many translators on this team.
+name: Translator access to Indonesian (id_ID)
+about: Do you want access for translating into Indonesian?
 title: "[id_ID] Translator access request"
 labels: request_access
 ---

@@ -1,6 +1,6 @@
 ---
-name: Translator access to Ukrainian (uk_UA)
-about: Do you want access for translating into Ukrainian?
+name: "Translator access to Ukrainian (uk_UA) \U0001F6D1 team full \U0001F6D1"
+about: Thanks, there are already many translators on this team.
 title: "[uk_UA] Translator access request"
 labels: request_access
 ---
