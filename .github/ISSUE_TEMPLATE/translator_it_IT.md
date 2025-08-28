@@ -1,6 +1,6 @@
 ---
-name: Translator access to Italian (it_IT)
-about: Do you want access for translating into Italian?
+name: "Translator access to Italian (it_IT) \U0001F6D1 team full \U0001F6D1"
+about: Thanks, there are already many translators on this team.
 title: "[it_IT] Translator access request"
 labels: request_access
 ---

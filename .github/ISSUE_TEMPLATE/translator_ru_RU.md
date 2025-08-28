@@ -1,6 +1,6 @@
 ---
-name: Translator access to Russian (ru_RU)
-about: Do you want access for translating into Russian?
+name: "Translator access to Russian (ru_RU) \U0001F6D1 team full \U0001F6D1"
+about: Thanks, there are already many translators on this team.
 title: "[ru_RU] Translator access request"
 labels: request_access
 ---

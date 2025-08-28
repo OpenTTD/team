@@ -1,6 +1,6 @@
 ---
-name: Translator access to Chinese (Simplified) (zh_CN)
-about: Do you want access for translating into Chinese (Simplified)?
+name: "Translator access to Chinese (Simplified) (zh_CN) \U0001F6D1 team full \U0001F6D1"
+about: Thanks, there are already many translators on this team.
 title: "[zh_CN] Translator access request"
 labels: request_access
 ---

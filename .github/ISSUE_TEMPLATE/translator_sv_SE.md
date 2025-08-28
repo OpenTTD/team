@@ -1,6 +1,6 @@
 ---
-name: Translator access to Swedish (sv_SE)
-about: Do you want access for translating into Swedish?
+name: "Translator access to Swedish (sv_SE) \U0001F6D1 team full \U0001F6D1"
+about: Thanks, there are already many translators on this team.
 title: "[sv_SE] Translator access request"
 labels: request_access
 ---

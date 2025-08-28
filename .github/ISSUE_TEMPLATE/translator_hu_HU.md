@@ -1,6 +1,6 @@
 ---
-name: Translator access to Hungarian (hu_HU)
-about: Do you want access for translating into Hungarian?
+name: "Translator access to Hungarian (hu_HU) \U0001F6D1 team full \U0001F6D1"
+about: Thanks, there are already many translators on this team.
 title: "[hu_HU] Translator access request"
 labels: request_access
 ---
