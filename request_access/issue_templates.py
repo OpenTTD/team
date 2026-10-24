@@ -29,7 +29,7 @@ def do_generate_issue_templates():
         if not line:
             continue
 
-        (isocode, _, _, _, name, ownname, _, _, _) = line.split(",")
+        isocode, _, _, _, name, ownname, _, _, _ = line.split(",")
 
         # The base language cannot be translated.
         if isocode == "en_GB":
