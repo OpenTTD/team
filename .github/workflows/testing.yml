@@ -1,51 +1,44 @@
-name: Testing
+name: Testing (Python)
 
 on:
-  push:
-    branches:
-    - main
   pull_request:
-    branches:
-    - main
+
+concurrency:
+  group: testing-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
 
 jobs:
+  codeql:
+    name: CodeQL
+    uses: OpenTTD/actions/.github/workflows/rw-py-codeql.yml@v7
+    with:
+      python-version: 3.15
+      source-root: .
+
   flake8:
     name: Flake8
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v7
-    - name: Flake8
-      uses: TrueBrain/actions-flake8@v2
-      with:
-        path: request_access
+    uses: OpenTTD/actions/.github/workflows/rw-py-flake8.yml@v7
+    with:
+      python-path: request_access
 
   black:
     name: Black
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v7
-    - name: Set up Python 3.8
-      uses: actions/setup-python@v7
-      with:
-        python-version: 3.8
-    - name: Black
-      run: |
-        python -m pip install --upgrade pip
-        pip install black
-        black -l 120 --check request_access
+    uses: OpenTTD/actions/.github/workflows/rw-py-black.yml@v7
+    with:
+      python-version: 3.15
+      python-path: request_access
 
-  check_annotations:
-    name: Check Annotations
+  annotation_check:
+    name: Annotation Check
     needs:
     - flake8
     - black
+    # not codeql, as that reports its own status
 
     if: always() && github.event_name == 'pull_request'
 
     runs-on: ubuntu-latest
 
     steps:
-    - name: Check annotations
-      uses: OpenTTD/actions/annotation-check@v7
+      - name: Check annotations
+        uses: OpenTTD/actions/annotation-check@v7
