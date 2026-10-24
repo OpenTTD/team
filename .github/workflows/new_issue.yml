@@ -9,7 +9,7 @@ jobs:
   new_issue:
     name: New issue
     runs-on: ubuntu-latest
-    if: github.actor != 'DorpsGek'
+    if: !github.event.issue.pull_request && github.actor != 'DorpsGek'
 
     steps:
     - name: Checkout
